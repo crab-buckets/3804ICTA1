@@ -46,7 +46,7 @@ fig, axes = plt.subplots(n_rows, n_cols, figsize=(18, n_rows * 3))
 axes = axes.flatten()
 
 for i, col in enumerate(binary):
-    sns.countplot(x=col, data=df, hue='HeartDiseaseorAttack', ax=axes[i], palette="Set3")
+    sns.countplot(x=col, data=df, hue='HeartDiseaseorAttack', ax=axes[i], palette="Set1")
     axes[i].set_title(col)
 
 for j in range(i + 1, len(axes)):
